@@ -16,6 +16,10 @@ app.get('/music', (req,res,next) => {
     res.sendFile('music.html', {root: __dirname})
 })
 
+app.get('/reverb', (req,res,next) => {
+    res.sendFile('reverb.html', {root: __dirname})
+})
+
 app.listen(3000, function () {
     console.log('Server is listening on port 3000!');
 });
